@@ -33,8 +33,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 
-using JsonFx.CodeGen;
-
 namespace JsonFx.Serialization.Resolvers
 {
 #if NET40 && !SILVERLIGHT
@@ -47,6 +45,7 @@ namespace JsonFx.Serialization.Resolvers
 	using EnumCacheDictionary=System.Collections.Generic.Dictionary<Type, IDictionary<Enum, string>>;
 	using FactoriesDictionary=System.Collections.Generic.Dictionary<Type, FactoryMap>;
 	using NameCacheDictionary=System.Collections.Generic.Dictionary<Type, IEnumerable<DataName>>;
+    using JsonFx.CodeGen;
 #endif
 
 	public sealed class MemberMap

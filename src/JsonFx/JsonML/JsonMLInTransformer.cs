@@ -52,11 +52,7 @@ namespace JsonFx.JsonML
 		{
 			#region Constants
 
-			private static readonly Regex RegexWhitespace = new Regex(@"\s+",
-#if !SILVERLIGHT
-			RegexOptions.Compiled|
-#endif
-			RegexOptions.CultureInvariant|RegexOptions.ECMAScript);
+			private static readonly Regex RegexWhitespace = new Regex(@"\s+", RegexOptions.CultureInvariant|RegexOptions.ECMAScript);
 
 			private const string SingleSpace = " ";
 

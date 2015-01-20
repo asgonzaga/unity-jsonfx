@@ -35,7 +35,6 @@ using System.ComponentModel;
 using System.Globalization;
 using System.Reflection;
 
-using JsonFx.CodeGen;
 using JsonFx.Serialization.Resolvers;
 
 #if !NET20 && !NET30 && !WINDOWS_PHONE

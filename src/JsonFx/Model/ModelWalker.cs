@@ -32,7 +32,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-using JsonFx.CodeGen;
 using JsonFx.Serialization;
 using JsonFx.Serialization.Filters;
 using JsonFx.Serialization.GraphCycles;

@@ -57,11 +57,7 @@ namespace JsonFx.Model.Filters
 		private const long MaxValueMilliseconds = 253402300800000L;
 
 		private const string MSAjaxDatePattern = @"^/Date\(([+\-]?\d+?)([+\-]\d{4})?\)/$";
-		private static readonly Regex MSAjaxDateRegex = new Regex(MSAjaxDatePattern,
-#if !SILVERLIGHT
-			RegexOptions.Compiled|
-#endif
-			RegexOptions.CultureInvariant|RegexOptions.ECMAScript);
+		private static readonly Regex MSAjaxDateRegex = new Regex(MSAjaxDatePattern, RegexOptions.CultureInvariant|RegexOptions.ECMAScript);
 
 		private const string MSAjaxDatePrefix = @"/Date(";
 		private const string MSAjaxDateSuffix = @")/";

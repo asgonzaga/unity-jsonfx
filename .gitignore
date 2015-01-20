@@ -7,3 +7,6 @@ external
 _ReSharper.*
 *.resharper.user
 *.resharper
+*.meta
+src/Unity/Library
+src/Unity/Temp
