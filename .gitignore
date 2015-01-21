@@ -10,3 +10,6 @@ _ReSharper.*
 *.meta
 src/Unity/Library
 src/Unity/Temp
+*.csproj
+*.sln
+*.userprefs
