@@ -302,7 +302,7 @@ namespace JsonFx.Serialization
 		/// <returns></returns>
 		public object CoerceType(Type targetType, object value)
 		{
-			if (targetType == null || targetType == typeof(object))
+			if (targetType == null || targetType == typeof(object) || (value != null && targetType.Equals(value.GetType())))
 			{
 				return value;
 			}
